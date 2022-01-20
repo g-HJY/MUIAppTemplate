@@ -1,0 +1,42 @@
+{
+	"index.html": {
+		"refer": [
+			"index-menu.html",
+			"examples/guide.html",
+			"examples/accordion.html",
+			"examples/buttons.html",
+			"examples/checkbox.html",
+			"examples/icons.html",
+			"examples/switches.html"
+		],
+		"resources": []
+	},
+	"page/login/login.html": {
+		"refer": [
+			"page/login/main.html",
+			"page/main/main.html",
+			"page/login/forget_password.html",
+			"page/login/reg.html"
+		],
+		"resources": []
+	},
+	"page/main/main.html": {
+		"refer": [
+			"page/login/login.html",
+			"page/main/tab-webview-subpage-setting.html",
+			"page/main/tab-webview-subpage-about.html",
+			"page/main/tab-webview-subpage-contact.html",
+			"page/main/tab-webview-subpage-chat.html"
+		],
+		"resources": [
+			"page/main/tab-webview-subpage-about.html",
+			"page/main/tab-webview-subpage-chat.html"
+		]
+	},
+	"page/main/tab-webview-subpage-setting.html": {
+		"refer": [
+			"page/login/login.html",
+			"page/feedback/feedback.html"
+		]
+	}
+}
