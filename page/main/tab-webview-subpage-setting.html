@@ -41,19 +41,20 @@
 				</li>
 			</ul>
 			<ul class="mui-table-view" style="margin-top: 20px;">
+
+				<li class="mui-table-view-cell">
+					<a id='changepwd' class="mui-navigate-right">
+						修改密码
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id="map" class="mui-navigate-right">
+						百度地图
+					</a>
+				</li>
 				<li class="mui-table-view-cell">
 					<a id="helpfeedback" class="mui-navigate-right">
 						帮助与反馈
-					</a>
-				</li>
-				<li class="mui-table-view-cell">
-					<a class="mui-navigate-right">
-						隐私
-					</a>
-				</li>
-				<li class="mui-table-view-cell">
-					<a class="mui-navigate-right">
-						通用
 					</a>
 				</li>
 			</ul>
@@ -95,6 +96,20 @@
 			mui.openWindow({
 				url: '../feedback/feedback.html',
 				id: 'helpfeedback.html'
+			});
+		});
+
+		document.getElementById("changepwd").addEventListener('tap', function() {
+			mui.openWindow({
+				url: '../changepwd/changepwd.html',
+				id: 'changepwd.html'
+			});
+		});
+
+		document.getElementById("map").addEventListener('tap', function() {
+			mui.openWindow({
+				url: '../baidumap/map.html',
+				id: 'map.htlm'
 			});
 		});
 
