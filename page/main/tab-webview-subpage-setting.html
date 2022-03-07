@@ -53,6 +53,11 @@
 					</a>
 				</li>
 				<li class="mui-table-view-cell">
+					<a id="ble" class="mui-navigate-right">
+						低功耗蓝牙
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
 					<a id="helpfeedback" class="mui-navigate-right">
 						帮助与反馈
 					</a>
@@ -78,7 +83,7 @@
 				</li>
 			</ul>
 		</div>
-		</style>
+		
 	</body>
 	<script src="../../js/mui.min.js"></script>
 	<script>
@@ -110,6 +115,13 @@
 			mui.openWindow({
 				url: '../baidumap/map.html',
 				id: 'map.htlm'
+			});
+		});
+
+		document.getElementById("ble").addEventListener('tap', function() {
+			mui.openWindow({
+				url: '../ble/ble.html',
+				id: 'ble.htlm'
 			});
 		});
 
